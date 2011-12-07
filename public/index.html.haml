@@ -1,0 +1,18 @@
+!!!
+%html
+	%head
+		%meta{:name => :viewport, :content => 'width=device-width, initial-scale=1'}
+		%title App
+		%link{:href => 'application-datauri.css', :rel => 'stylesheet', :type => 'text/css'}
+		%script{:src => 'application.js'}
+	%body
+		%div{:data => {:role => :page}, :id => :emptypage}
+			%div{:data => {:role => :header}}
+				%h1
+					App
+			%div{:data => {:role => :content}}
+				Body
+			%div{:data => {:role => :footer, :position => :fixed}, :class => 'ui-bar'}
+				Footer
+
+

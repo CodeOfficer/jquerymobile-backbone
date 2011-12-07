@@ -1,0 +1,37 @@
+javascripts:
+  application:
+    - public/javascripts/vendor/phonegap.js
+    - public/javascripts/vendor/jquery.js
+    - public/javascripts/vendor/jquery.mobile.defaults.js
+    - public/javascripts/vendor/jquery.mobile.js
+    - public/javascripts/vendor/handlebars.js
+    - public/javascripts/vendor/underscore.js
+    - public/javascripts/vendor/backbone.js
+    - public/javascripts/vendor/support.js
+    - public/javascripts/vendor/mobile_view.js
+    - public/javascripts/vendor/mobile_router.js
+    - public/javascripts/app/templates/helpers.js
+    - public/javascripts/app/setup.js
+    - public/javascripts/app/routers/*.js
+    - public/javascripts/app/models/*.js
+    - public/javascripts/app/collections/*.js
+    - public/javascripts/app/templates/**/*.jst
+    - public/javascripts/app/views/**/*.js
+    - public/javascripts/app/ready.js
+stylesheets:
+  application:
+    - public/stylesheets/vendor/jquery.mobile.css
+    - public/stylesheets/app/application.css
+
+package_assets: on
+embed_assets: true
+compress_assets: off
+gzip_assets: off
+javascript_compressor: yui
+allow_debugging: on
+template_function: Handlebars.template
+template_namespace: window.JST
+template_extension: jst
+package_path: ../www
+compressor_options: {}
+css_compressor_options: {}

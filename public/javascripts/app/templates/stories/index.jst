@@ -1,0 +1,19 @@
+{{#header}}
+  <h1>Stories</h1>
+  {{#link_to "#dashboard" data-direction="reverse" data-icon="arrow-l"}}Back{{/link_to}}
+{{/header}}
+
+{{#content}}
+  {{#listview data-inset="true" data-theme="c"}}
+    {{#each this}}
+      <li>
+        <a href="#stories-{{id}}" rel="external">{{title}}</a>
+      </li>
+    {{/each}}
+  {{/listview}}
+{{/content}}
+
+{{#footer data-position="fixed" class="ui-bar"}}
+  Footer
+{{/footer}}
+

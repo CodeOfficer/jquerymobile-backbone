@@ -1,0 +1,16 @@
+{{#header}}
+  <h1>Header</h1>
+{{/header}}
+
+{{#content}}
+  {{#listview data-inset="true" data-theme="c"}}
+    <li>
+      {{#link_to "#stories"}}Stories{{/link_to}}
+      <span class='ui-li-count'>{{stories_count}}</span>
+    </li>
+  {{/listview}}
+{{/content}}
+
+{{#footer data-position="fixed" class="ui-bar"}}
+  Footer
+{{/footer}}
