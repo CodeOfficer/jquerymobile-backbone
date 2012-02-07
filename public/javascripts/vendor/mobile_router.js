@@ -26,6 +26,7 @@ _.extend(Support.MobileRouter.prototype, Backbone.Router.prototype, {
 				window.oldView = oldView;
         oldView.leave();
       };
+			newView.trigger('afterRender');
     });
 	}
 
