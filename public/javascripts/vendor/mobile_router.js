@@ -19,6 +19,12 @@ _.extend(Support.MobileRouter.prototype, Backbone.Router.prototype, {
       changePageOptions["reverse"] = true;
     };
 
+    if (oldView && $(oldView.el).attr("data-transition")) {
+      changePageOptions["transition"] = $(oldView.el).attr("data-transition");
+    } else {
+      changePageOptions["transition"] = $.mobile.defaultPageTransition;
+    };
+
 		$.mobile.changePage(page, changePageOptions);
 
     $(document).one("pagechange", function(e, ui){
