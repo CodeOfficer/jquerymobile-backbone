@@ -1,5 +1,4 @@
 Support.MobileView = function(options) {
-  this.children = _([]);
   Backbone.View.apply(this, [options]);
 };
 
@@ -10,7 +9,10 @@ _.extend(Support.MobileView.prototype, Backbone.View.prototype, {
   leave: function() {
     this.unbind();
     this.remove();
+    this.afterLeave();
   },
+
+  afterLeave: function() {},
 
   make : function(tagName, attributes, content) {
     var node = Backbone.View.prototype.make.call(this, tagName, attributes, content);
