@@ -7,6 +7,7 @@ javascripts:
     - public/javascripts/vendor/handlebars.js
     - public/javascripts/vendor/underscore.js
     - public/javascripts/vendor/backbone.js
+    - public/javascripts/vendor/mbp.js
     - public/javascripts/vendor/support.js
     - public/javascripts/vendor/mobile_view.js
     - public/javascripts/vendor/mobile_router.js
